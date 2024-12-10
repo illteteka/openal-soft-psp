@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc
+END
+dsound.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/dsound.c
+END
+ALc.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/ALc.c
+END
+wave.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/wave.c
+END
+psp.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/psp.c
+END
+oss.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/oss.c
+END
+alcReverb.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/alcReverb.c
+END
+portaudio.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/portaudio.c
+END
+solaris.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/solaris.c
+END
+alcRing.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/alcRing.c
+END
+alsa.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/alsa.c
+END
+ALu.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/ALu.c
+END
+alcConfig.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/alcConfig.c
+END
+winmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/winmm.c
+END
+alcThread.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/alcThread.c
+END
+bs2b.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/13/trunk/Librarys/OpenAL%20psp/Alc/bs2b.c
+END
