@@ -199,9 +199,10 @@ extern char _alDebug[256];
     if(_al_print_i < (int)sizeof(_alDebug) && _al_print_i > 0)                     \
         snprintf(_alDebug+_al_print_i, sizeof(_alDebug)-_al_print_i, __VA_ARGS__); \
     _alDebug[sizeof(_alDebug)-1] = 0; \
-    pspDebugScreenPrintf("%s", _alDebug); \
     sceKernelDelayThread(1*1000*1000); \
 } while(0)
+
+//    //pspDebugScreenPrintf("%s", _alDebug); \
 
 #if 0
     freopen ("stderr.txt","a",stderr); \
