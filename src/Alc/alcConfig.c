@@ -218,14 +218,14 @@ void ReadALConfig(void)
         }
     }
 #elif defined(PSP)
-    f = fopen("alsoft.conf", "r");
-    if(!f)
-        f = fopen("ms0:/alsoft.conf", "r");
-    if(f)
-    {
-        LoadConfigFromFile(f);
-        fclose(f);
-    }
+    // f = fopen("alsoft.conf", "r");
+    // if(!f)
+    //     f = fopen("ms0:/alsoft.conf", "r");
+    // if(f)
+    // {
+    //     LoadConfigFromFile(f);
+    //     fclose(f);
+    // }
 #else
     f = fopen("/etc/openal/alsoft.conf", "r");
     if(!f)
@@ -261,15 +261,15 @@ void ReadALConfig(void)
 #endif
 
 #ifndef PSP
-    if(getenv("ALSOFT_CONF"))
-    {
-        f = fopen(getenv("ALSOFT_CONF"), "r");
-        if(f)
-        {
-            LoadConfigFromFile(f);
-            fclose(f);
-        }
-    }
+    // if(getenv("ALSOFT_CONF"))
+    // {
+    //     f = fopen(getenv("ALSOFT_CONF"), "r");
+    //     if(f)
+    //     {
+    //         LoadConfigFromFile(f);
+    //         fclose(f);
+    //     }
+    // }
 #endif
 }
 

@@ -202,8 +202,6 @@ extern char _alDebug[256];
     sceKernelDelayThread(1*1000*1000); \
 } while(0)
 
-//    //pspDebugScreenPrintf("%s", _alDebug); \
-
 #if 0
     freopen ("stderr.txt","a",stderr); \
     fprintf(stderr, "%s", _alDebug);  \
