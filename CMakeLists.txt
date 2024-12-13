@@ -36,7 +36,7 @@ OPTION(EXAMPLES  "Build example programs"              ON)
 
 
 IF(WIN32)
-    SET(LIBNAME OpenAL32)
+    SET(LIBNAME OpenAL)
     ADD_DEFINITIONS("-D_WIN32")
 ELSE()
     SET(LIBNAME openal)
@@ -58,7 +58,7 @@ CHECK_TYPE_SIZE("void*" SIZEOF_VOIDP)
 
 
 # Add definitions, compiler switches, etc.
-INCLUDE_DIRECTORIES(OpenAL32/Include include "${OpenAL_BINARY_DIR}")
+INCLUDE_DIRECTORIES(OpenAL/Include include "${OpenAL_BINARY_DIR}")
 
 IF(NOT CMAKE_BUILD_TYPE)
     SET(CMAKE_BUILD_TYPE RelWithDebInfo CACHE STRING
@@ -224,16 +224,16 @@ IF(NOT HAVE_STDINT_H)
 ENDIF()
 
 
-SET(OPENAL_OBJS  OpenAL32/alAuxEffectSlot.c
-                 OpenAL32/alBuffer.c
-                 OpenAL32/alEffect.c
-                 OpenAL32/alError.c
-                 OpenAL32/alExtension.c
-                 OpenAL32/alFilter.c
-                 OpenAL32/alListener.c
-                 OpenAL32/alSource.c
-                 OpenAL32/alState.c
-                 OpenAL32/alThunk.c
+SET(OPENAL_OBJS  OpenAL/alAuxEffectSlot.c
+                 OpenAL/alBuffer.c
+                 OpenAL/alEffect.c
+                 OpenAL/alError.c
+                 OpenAL/alExtension.c
+                 OpenAL/alFilter.c
+                 OpenAL/alListener.c
+                 OpenAL/alSource.c
+                 OpenAL/alState.c
+                 OpenAL/alThunk.c
 )
 SET(ALC_OBJS  Alc/ALc.c
               Alc/ALu.c
@@ -356,8 +356,8 @@ CONFIGURE_FILE(
     "${OpenAL_SOURCE_DIR}/config.h.in"
     "${OpenAL_BINARY_DIR}/config.h")
 CONFIGURE_FILE(
-    "${OpenAL_SOURCE_DIR}/admin/pkgconfig/openal.pc.in"
-    "${OpenAL_BINARY_DIR}/admin/pkgconfig/openal.pc"
+    "${OpenAL_SOURCE_DIR}/openal.pc.in"
+    "${OpenAL_BINARY_DIR}/openal.pc"
     @ONLY)
 
 ADD_DEFINITIONS(-DAL_BUILD_LIBRARY)
@@ -386,7 +386,7 @@ INSTALL(FILES include/AL/al.h
               include/AL/alext.h
         DESTINATION include/AL
 )
-INSTALL(FILES "${OpenAL_BINARY_DIR}/admin/pkgconfig/openal.pc"
+INSTALL(FILES "${OpenAL_BINARY_DIR}/openal.pc"
         DESTINATION "${LIB_INSTALL_DIR}/pkgconfig")
 
 IF(EXAMPLES)

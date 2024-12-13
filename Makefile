@@ -14,23 +14,23 @@ ALCOBJS :=		$(SOURCE_DIR)/Alc/ALc.o \
 				$(SOURCE_DIR)/Alc/psp.o
 
 LIBOBJS :=		$(ALCOBJS) \
-				$(SOURCE_DIR)/OpenAL32/alAuxEffectSlot.o \
-				$(SOURCE_DIR)/OpenAL32/alBuffer.o \
-				$(SOURCE_DIR)/OpenAL32/alEffect.o \
-				$(SOURCE_DIR)/OpenAL32/alError.o \
-				$(SOURCE_DIR)/OpenAL32/alExtension.o \
-				$(SOURCE_DIR)/OpenAL32/alFilter.o \
-				$(SOURCE_DIR)/OpenAL32/alListener.o \
-				$(SOURCE_DIR)/OpenAL32/alSource.o \
-				$(SOURCE_DIR)/OpenAL32/alState.o \
-				$(SOURCE_DIR)/OpenAL32/alThunk.o
+				$(SOURCE_DIR)/OpenAL/alAuxEffectSlot.o \
+				$(SOURCE_DIR)/OpenAL/alBuffer.o \
+				$(SOURCE_DIR)/OpenAL/alEffect.o \
+				$(SOURCE_DIR)/OpenAL/alError.o \
+				$(SOURCE_DIR)/OpenAL/alExtension.o \
+				$(SOURCE_DIR)/OpenAL/alFilter.o \
+				$(SOURCE_DIR)/OpenAL/alListener.o \
+				$(SOURCE_DIR)/OpenAL/alSource.o \
+				$(SOURCE_DIR)/OpenAL/alState.o \
+				$(SOURCE_DIR)/OpenAL/alThunk.o
 
 OBJS :=			$(LIBOBJS)
 
 INCDIR :=		$(INCDIR) \
 				$(SOURCE_DIR) \
 				$(SOURCE_DIR)/include/ \
-				$(SOURCE_DIR)/OpenAL32/include/
+				$(SOURCE_DIR)/OpenAL/include/
 
 DEFINES :=		-DPSP
 
@@ -62,18 +62,18 @@ install: lib
 
 	install -d $(DESTDIR)$(PSPDIR)/include/OpenAL
 	install -m644 \
-		$(SOURCE_DIR)/OpenAL32/include/alAuxEffectSlot.h \
-		$(SOURCE_DIR)/OpenAL32/include/alBuffer.h \
-		$(SOURCE_DIR)/OpenAL32/include/alEffect.h \
-		$(SOURCE_DIR)/OpenAL32/include/alError.h \
-		$(SOURCE_DIR)/OpenAL32/include/alExtension.h \
-		$(SOURCE_DIR)/OpenAL32/include/alFilter.h \
-		$(SOURCE_DIR)/OpenAL32/include/alListener.h \
-		$(SOURCE_DIR)/OpenAL32/include/alMain.h \
-		$(SOURCE_DIR)/OpenAL32/include/alReverb.h \
-		$(SOURCE_DIR)/OpenAL32/include/alSource.h \
-		$(SOURCE_DIR)/OpenAL32/include/alState.h \
-		$(SOURCE_DIR)/OpenAL32/include/alThunk.h \
-		$(SOURCE_DIR)/OpenAL32/include/alu.h \
-		$(SOURCE_DIR)/OpenAL32/include/bs2b.h \
+		$(SOURCE_DIR)/OpenAL/include/alAuxEffectSlot.h \
+		$(SOURCE_DIR)/OpenAL/include/alBuffer.h \
+		$(SOURCE_DIR)/OpenAL/include/alEffect.h \
+		$(SOURCE_DIR)/OpenAL/include/alError.h \
+		$(SOURCE_DIR)/OpenAL/include/alExtension.h \
+		$(SOURCE_DIR)/OpenAL/include/alFilter.h \
+		$(SOURCE_DIR)/OpenAL/include/alListener.h \
+		$(SOURCE_DIR)/OpenAL/include/alMain.h \
+		$(SOURCE_DIR)/OpenAL/include/alReverb.h \
+		$(SOURCE_DIR)/OpenAL/include/alSource.h \
+		$(SOURCE_DIR)/OpenAL/include/alState.h \
+		$(SOURCE_DIR)/OpenAL/include/alThunk.h \
+		$(SOURCE_DIR)/OpenAL/include/alu.h \
+		$(SOURCE_DIR)/OpenAL/include/bs2b.h \
 		$(DESTDIR)$(PSPDIR)/include/OpenAL/
